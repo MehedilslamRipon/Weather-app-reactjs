@@ -11,7 +11,7 @@
 -  sass
 -  react-apexcharts
 
-![Preview](https://github.com/preview.png)
+![Preview](https://raw.githubusercontent.com/MehedilslamRipon/Weather-app-reactjs/master/preview.png)
 
 ## Prerequisites
 
