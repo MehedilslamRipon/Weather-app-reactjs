@@ -1,6 +1,5 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import {
-   BsFillCloudSleetFill,
    BsCloudSunFill,
    BsFillCloudsFill,
    BsFillCloudRainFill,
@@ -9,7 +8,10 @@ import {
 import { FaCloudRain } from 'react-icons/fa';
 import { FiSun } from 'react-icons/fi';
 import { AiFillApi } from 'react-icons/ai';
-import { WiNightSnowWind, WiDaySunny } from 'react-icons/wi';
+import { WiDaySunny } from 'react-icons/wi';
+import { GiFog } from "react-icons/gi";
+import { RiHazeLine } from "react-icons/ri";
+import { IoCloudSharp } from "react-icons/io5";
 
 interface IPropsType {
    value: string;
@@ -32,12 +34,14 @@ const ChoiceIcon: FC<IPropsType> = ({ value }) => {
          return <FiSun />;
       case 'overcast clouds':
          return <BsFillCloudsFill />;
+      case 'scattered clouds':
+         return <IoCloudSharp />;
       case 'cloudy with clearings':
          return <BsCloudSunFill />;
-      case 'snow':
-         return <BsFillCloudSleetFill />;
-      case 'light snow':
-         return <WiNightSnowWind />;
+      case 'fog':
+         return <GiFog />;
+      case 'haze':
+         return <RiHazeLine />;
       default:
          return <AiFillApi />;
    }
